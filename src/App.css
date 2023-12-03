@@ -10,6 +10,7 @@
   justify-content: flex-start;
   gap: 10px;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .window {
@@ -40,6 +41,14 @@
   min-height: 180px;
   border: 1px solid black;
   border-top: none;
+  word-break: break-all;
+  padding: 5px;
+  font-size: 12px;
+
+}
+
+#preview img {
+  width: 50%;
 }
 
 .ed-wrap {
@@ -55,21 +64,42 @@ textarea {
   padding: 5px;
   margin: 0;
   border: 0;
-  min-height: 50px;
+  min-height: 230px;
   max-height: 500px;
   overflow: auto;
   border: 1px solid black;
   border-top: none;
   background-color: var(--secondary-col);
+  font-size: 10px;
+  font-family: monospace, sans-serif;
 }
 
 .header{
   width: 100%-1px;
   margin: 0;
+  padding: 1px;
   height: 20px;
   background-color: var(--tertiary-col);
   border: 1px solid black;
-  box-shadow: inset 0px 0px 5px 1px rgb(87, 86, 86); 
+  box-shadow: inset 0px 0px 5px 1px rgb(87, 86, 86);
+  display: flex;
+  justify-content: space-between;
+  align-items: top; 
+}
+
+#header-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+#header-right {
+  height: 100%;
+}
+
+.header p {
+  font-size: 10px;
 }
 
 
