@@ -6,25 +6,19 @@
 
 .App {
   display: flex;
+  padding: 20px;
   flex-direction: column;
   justify-content: flex-start;
   gap: 10px;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
+  height: 150vh;
 }
 
 .window {
   padding: 0;
   margin: 0;
   border: 0;
-}
-
-.editor {
-  width: 250px;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-shadow: 0px 0px 3px 1px rgb(87, 86, 86);
 }
 
 .preview {
@@ -100,6 +94,22 @@ textarea {
 
 .header p {
   font-size: 10px;
+}
+
+pre,code {
+  background-color: white;
+  font-family: monospace;
+  color: rgb(0, 197, 50);
+}
+
+blockquote {
+  background-color: grey;
+  font-style: italic;
+}
+
+#header-right svg:hover {
+  color: rgb(0, 255,0);
+  cursor: pointer;
 }
 
 

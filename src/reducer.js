@@ -1,4 +1,6 @@
 const initialState = {
+    boolEditor: true,
+    boolPreview: true,
     inputText: `# Markdown Renderer
 ## Write your Markdown in the Editor    
 You can write single line code between two backticks: \`<div></div>\`.
@@ -29,6 +31,17 @@ export default function appReducer(state = initialState, action){
             return {
                 ...state,
                 inputText: action.payload
+            }
+        case 'toggleEditor':
+            return {
+                ...state,
+                boolEditor: !state.boolEditor
+            }
+
+        case 'togglePreview':
+            return {
+                ...state,
+                boolPreview: !state.boolPreview,
             }
         default:
             //return state unchanged
